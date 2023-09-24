@@ -3,6 +3,7 @@ import HomeLayout from "../Layout/HomeLayout";
 import Home from "../Pages/Home";
 import Donation from "../Pages/Donation";
 import Statistics from "../Pages/Statistics";
+import CardDatails from "../Pages/CardDatails";
 
 const Router = createBrowserRouter([
     {
@@ -22,8 +23,9 @@ const Router = createBrowserRouter([
                 element: <Statistics></Statistics>
             },
             {
-                path: "/donation/:id",
-                element: <Statistics></Statistics>
+                path: "/details/:id",
+                element: <CardDatails></CardDatails>,
+                loader: ()=> fetch('apiData.json')
             },
         ]
     }

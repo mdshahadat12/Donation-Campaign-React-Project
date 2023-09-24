@@ -1,9 +1,10 @@
+import DonationCardContainer from "../Components/DonationCardContainer";
 
 
 const Donation = () => {
     return (
         <div>
-            this is Donation page
+            <DonationCardContainer></DonationCardContainer>
         </div>
     );
 };

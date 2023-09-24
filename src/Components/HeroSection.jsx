@@ -1,9 +1,13 @@
+import bg from "../assets/bg.png"
 const HeroSection = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-center my-10">I Grow By Helping People In Need</h1>
+    <div className="relative">
+        <img src={bg}/>
+        <div className="absolute bg-[#ffffffdc] flex inset-y-0 right-0 left-0 items-center">
+        <div className="w-full">
+      <h1 className="text-xl md:text-5xl font-bold text-center my-5 md:my-10">I Grow By Helping People In Need</h1>
 
-      <div className="w-[40%] mx-auto mb-32">
+      <div className="w-[60%] md:w-[40%] mx-auto">
       <form>
         <label className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
           Search
@@ -39,6 +43,8 @@ const HeroSection = () => {
         </div>
       </form>
       </div>
+    </div>
+        </div>
     </div>
   );
 };
