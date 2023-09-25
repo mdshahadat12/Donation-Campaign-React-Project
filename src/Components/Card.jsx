@@ -8,7 +8,7 @@ const Card = ({card}) => {
     return (
         <div>
             <Link to={`details/${id}`}>
-            <div className="cursor-pointer duration-200 active:scale-95">
+            <div className="cursor-pointer shadow-md duration-200 active:scale-95">
             <img className="w-full" src={picture} alt="" />
             <div className={`p-4 rounded-b-lg bg-[${card_bg_color}]`}>
                 <h3 className={`px-2 font-medium text-[${text_button_bg_color}] w-fit rounded-md bg-[${category_bg_color}]`}>{category}</h3>
