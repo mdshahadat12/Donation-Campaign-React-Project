@@ -1,26 +1,26 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ToastContainer, Zoom, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 // import useLoadData from "../Hooks/useLoadData";
 
 
 const CardDatails = () => {
     const data1 = useLoaderData()
-    // const data = useLoadData()
+    // const data1 = useLoadData()
     const {id} = useParams() 
     const [cardData, setCardData] = useState([])
     // const [apiData, setApiData] = useState([])
 
     useEffect(()=>{
+        
+        // fetch('./apiData.json')
+        // .then(res => res.json())
+        // .then(data => console.log(data))
         {
             const cardData1 = data1 && data1?.find(card => card.id == id)
             setCardData(cardData1);
         }
-
-    // fetch('apiData.json')
-    // .then(res => res.json())
-    // .then(data => setApiData(data))
 
     },[data1,id])
 

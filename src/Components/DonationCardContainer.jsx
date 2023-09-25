@@ -22,7 +22,7 @@ const DonationCardContainer = () => {
                 {
                     seeAll ? localData?.map(card => <DonationCard key={card.id} card={card}></DonationCard>) : localData?.slice(0,4).map(card => <DonationCard key={card.id} card={card}></DonationCard>)
                 }
-            </div>: <h1>no data</h1>
+            </div>: <p className="text-center text-2xl my-14 font-semibold text-red-400">You Have not donated yet</p>
             }
         <div className="flex justify-center">
         {
