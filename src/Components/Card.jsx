@@ -10,9 +10,9 @@ const Card = ({card}) => {
             <Link to={`details/${id}`}>
             <div className="cursor-pointer shadow-md duration-200 active:scale-95">
             <img className="w-full" src={picture} alt="" />
-            <div className={`p-4 rounded-b-lg bg-[${card_bg_color}]`}>
-                <h3 className={`px-2 font-medium text-[${text_button_bg_color}] w-fit rounded-md bg-[${category_bg_color}]`}>{category}</h3>
-                <h1 className={`text-lg mt-3 font-semibold text-[${text_button_bg_color}]`}>{title}</h1>
+            <div style={{backgroundColor:`${card_bg_color}`}} className={"p-4 rounded-b-lg"}>
+                <h3 style={{backgroundColor:`${category_bg_color}`,color:`${text_button_bg_color}`}} className={`px-2 font-medium w-fit rounded-md`}>{category}</h3>
+                <h1 style={{color:`${text_button_bg_color}`}} className={`text-lg mt-3 font-semibold`}>{title}</h1>
             </div>
             </div>
             </Link>
