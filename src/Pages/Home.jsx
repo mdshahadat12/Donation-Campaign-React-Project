@@ -1,11 +1,13 @@
+import { useState } from "react";
 import CardContainer from "../Components/CardContainer";
 import HeroSection from "../Components/HeroSection";
 
 const Home = () => {
+    const [value, setValue] = useState("")
     return (
         <div>
-            <HeroSection></HeroSection>
-            <CardContainer></CardContainer>
+            <HeroSection setValue={setValue}></HeroSection>
+            <CardContainer value={value}></CardContainer>
         </div>
     );
 };

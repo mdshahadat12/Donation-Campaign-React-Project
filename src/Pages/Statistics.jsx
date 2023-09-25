@@ -11,12 +11,10 @@ const pieData = () => {
 } 
 
   return (
-    <div className="container-fluid mb-3">
-        <h3 className="my-5 font-bold">Donation Pie Chart</h3>
+    <div className="container-fluid mb-3 flex justify-center">
         <Chart 
+        className="w-[600px] h-[400px]"
         type="pie"
-        width={1200}
-        height={400}
         series={pieData()}              
         options={{
               labels:["Your Doantion", "Total Donation"]                     
