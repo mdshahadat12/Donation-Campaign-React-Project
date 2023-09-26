@@ -5,7 +5,7 @@ import DonationCard from "./DonationCard";
 const DonationCardContainer = () => {
     const [localData, setLocalData] = useState([])
     const [seeAll, setSeeAll] = useState(false)
-    console.log(seeAll);
+    // console.log(seeAll);
     useEffect(()=>{
         const localitem = JSON.parse(localStorage.getItem('card'))
         setLocalData(localitem);
