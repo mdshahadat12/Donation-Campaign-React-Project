@@ -80,7 +80,7 @@ const CardDatails = () => {
             <div className="relative">
                 <img className="w-full rounded-xl" src={picture} alt="" />
                 <div className="bg-[#24222277] py-4 rounded-b-xl absolute w-full bottom-0">
-                    <button onClick={handleClick} style={{backgroundColor:`${text_button_bg_color}`}} className={`text-white font-medium px-5 py-3 ml-5 rounded-md`}>Donate ${price}</button>
+                    <button onClick={handleClick} style={{backgroundColor:`${text_button_bg_color}`}} className={`active:scale-95 text-white font-medium px-5 py-3 ml-5 rounded-md`}>Donate ${price}</button>
                 </div>
             </div>
             <h1 className="text-4xl font-bold my-8">{title}</h1>

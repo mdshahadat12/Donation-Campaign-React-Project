@@ -3,9 +3,12 @@ const Erorr = () => {
     return (
         <div>
             <div className="flex items-center flex-col">
-            <h1 className="text-center text-4xl mt-14 mb-5 font-bold">This is not Right way</h1>
-                <img className="w-[20%]" src="https://i.ibb.co/WVNhMgy/pngegg.png" alt="" />
-            <Link to={"/"}><button className="py-2 px-3 bg-gray-500 rounded-lg text-white font-semibold mt-10">Home</button></Link>
+                <div className="flex justify-center">
+                    <img className="w-[150%] mt-16" src="https://i.ibb.co/d7KY06r/oppos-removebg-preview.png" alt="" />
+                </div>
+            <h1 className="text-center text-xl -mt-5 mb-5 font-bold">404 -NOT FOUND THE PAGE</h1>
+            <p className="text-center">This is not right way or could not found the page. <br></br> You can go home now.</p>
+            <Link to={"/"}><button className="py-2 px-3 bg-blue-800 rounded-lg text-white font-semibold mt-5">Go To Home</button></Link>
             </div>
         </div>
     );

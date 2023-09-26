@@ -4,6 +4,7 @@ const HeroSection = ({setValue}) => {
   const handleSearch = e =>{
     e.preventDefault()
     setValue(e.target.search.value);
+    e.target.search.value = "";
 }
   return (
     <div className="relative">
