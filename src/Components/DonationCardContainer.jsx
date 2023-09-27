@@ -22,11 +22,11 @@ const DonationCardContainer = () => {
                 {
                     seeAll ? localData?.map(card => <DonationCard key={card.id} card={card}></DonationCard>) : localData?.slice(0,4).map(card => <DonationCard key={card.id} card={card}></DonationCard>)
                 }
-            </div>: <p className="text-center text-2xl my-14 font-semibold text-red-400">You Have not donated yet</p>
+                 </div>: <p className="text-center text-2xl my-14 font-semibold text-red-400">You Have not donated yet</p>
             }
         <div className="flex justify-center">
         {
-            localData?.length > 4 && <button onClick={handleSeeAll} className="py-2 px-3 bg-green-500 rounded-lg text-white font-semibold mt-3">{seeAll?"Show less":"Show All"}</button>
+            localData?.length > 4 && <button onClick={handleSeeAll} className={`${seeAll ? 'hidden':''} py-2 px-3 bg-green-500 rounded-lg text-white font-semibold mt-3`}>Show All</button>
         }
         </div>
         </div>
